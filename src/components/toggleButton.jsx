@@ -5,11 +5,11 @@
 
 
 
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function ToggleBtn() {
-
+  const [state, setState] = useState(true);
   return (
-    <button>on</button>
+    <button onClick={() => setState(!state)}>{state ? 'on' : 'off'}</button>
   )
 }

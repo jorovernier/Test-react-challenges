@@ -2,7 +2,7 @@
 // when you click the add person button, make it so the person gets added to the phone book.
 // the data should be ordered like a phone book, where the last name comes first, then the first name and lastly the phone number. 
 
-import React, { useState } from 'react';
+import React from 'react';
 
 const AddPersonForm = () => {
     return (
@@ -39,6 +39,9 @@ const PhoneBookList = () => {
 class PhoneBook extends React.Component {
     constructor(props) {
       super(props);
+      this.state = {
+          
+      }
     }
   
     handleClick() {

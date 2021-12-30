@@ -2,7 +2,7 @@
 // The list should consist of a first name and their age seperated by one space.
 // An array of people will be passed to the function. 
 // Make use of component state for this challenge.
-import React from 'react';
+import React, {useState} from 'react';
 
 const people = [
     {
@@ -27,7 +27,16 @@ const people = [
     },
 ]
 
-const Users = (namesArr) => {
+function Users(namesArr){
+    
+    for(let i = 0; i < namesArr.length; i++){
+        let blank = [];
+        let person = [];
+        person.push(namesArr[i].firstName, namesArr[i].age);
+        blank.push(person);
+        
+    }
+
     return (
         <>
         <h3>List of Users:</h3>

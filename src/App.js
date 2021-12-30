@@ -9,7 +9,7 @@ import './App.css';
 
 import ToggleBtn from './components/toggleButton';
 import Counter from './components/counter';
-import List from './components/list';
+// import List from './components/list';
 import Languages from './components/languages';
 import PhoneBook from './components/phoneBook';
 
@@ -19,7 +19,7 @@ function App() {
       <header className="App-header">
         <ToggleBtn />
         <Counter />
-        <List />
+        {/* <List /> */}
         <Languages />
         <PhoneBook />
       </header>

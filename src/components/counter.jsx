@@ -2,14 +2,16 @@
 // when I click on increment, the count should go up by one.
 // when I click on decrement, the count should go down by one.
 // Make use of component state for this challenge.
-import React from 'react';
+import React, { useState } from 'react';
 
 function Counter() {
+    const [count, setCount] = useState(0);
+
     return (
         <>
-            <p>count: 0</p>
-            <button>increment</button>
-            <button>decrement</button>
+            <p>count: {count}</p>
+            <button onClick={() => setCount(count+1)}>increment</button>
+            <button onClick={() => setCount(count-1)}>decrement</button>
         </>
     )
 }

@@ -5,15 +5,18 @@
 // and use the useContext API to transport your state and changes to your child component.
 // Make use of component state for this challenge. (hint: you will use the createContext and useContext hooks) 
 
-import React from 'react';
+import React, {createContext, useContext, useState} from 'react';
 
 const LangList = ['JavaScript', 'Python'];
 
+// const lang = createContext();
+
 const FavoriteLang = () => {
+    const [lang, setLang] = useState(0);
     return (
         <>
-            <p>my favorite language is JavaScript</p>
-            <button>favorite language</button>
+            <p>my favorite language is {LangList[lang]}</p>
+            <button onClick={() => setLang(lang+1)}>favorite language</button>
         </>
     )
 }
